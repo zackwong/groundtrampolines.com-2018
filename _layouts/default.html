@@ -11,19 +11,10 @@
     <meta name="applicable-device" content="pc,mobile">
     <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/flexwarm-icon.jpg">
     <meta name="apple-mobile-web-app-title" content="Flexwarm">
-    <link href="{{ site.url }}/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
     <link href="/assets/bootstrap.css" rel="stylesheet">
     <link href="/assets/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/plugins/selectbox/select_option1.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/plugins/datepicker/datepicker.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/plugins/isotope/jquery.fancybox.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/plugins/isotope/isotope.css">
-    <link rel="stylesheet" href="{{ site.url }}/plugins/revolution/css/settings.css">
-    <link rel="stylesheet" href="{{ site.url }}/plugins/revolution/css/layers.css">
-    <link rel="stylesheet" href="{{ site.url }}/plugins/revolution/css/navigation.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="{{ site.url }}/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.url }}/assets/color.css">
+    <link href="/assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/color.css">
     <!--[if lt IE 9]>
       <script src="/assets/html5shiv.min.js"></script>
       <script src="/assets/respond.min.js"></script>
@@ -62,7 +53,15 @@
                     <li><a href="{{ site.url }}/flexwarm/">Flexwarm Heating Technology</a></li>
                   </ul>
                 </li>
-                <li class="{% if page.category == 'app' %}active{% endif %}"><a href="{{ site.url }}/app/">App</a></li>
+                <li class="dropdown singleDrop {% if page.category == 'products' %}active{% endif %}">
+                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="{{ site.url }}/home-appliance/">Home Appliance</a></li>
+                    <li><a href="{{ site.url }}/smart-clothes/">Smart Clothes</a></li>
+                    <li><a href="{{ site.url }}/smart-wear/">Smart Wear</a></li>
+                    <li><a href="{{ site.url }}/app/">App</a></li>
+                  </ul>
+                </li>
                 <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
                 <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
               </ul>
@@ -113,26 +112,13 @@
         </div>
         <div class="copyRight clearfix">
           <div class="container">
-            <div class="col-sm-12 text-center">Copyright © 2011-2018 Guangdong Flexwarm Advanced Materials & Technology Co., Ltd | <a href="{{ site.url }}/Sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+            <div class="col-sm-12 text-center">Copyright © 2011-2018 Guangdong Flexwarm Advanced Materials & Technology Co., Ltd | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
           </div>
         </div>
       </footer>
     </div>
-    <script src="{{ site.url }}/plugins/jquery/jquery-2.2.4.min.js"></script>
-    <script src="{{ site.url }}/plugins/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script src="{{ site.url }}/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="{{ site.url }}/assets/bootstrap.min.js"></script>
-    <script src="{{ site.url }}/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="{{ site.url }}/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="{{ site.url }}/plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
-    <script src="{{ site.url }}/plugins/datepicker/bootstrap-datepicker.js"></script>
-    <script src="{{ site.url }}/plugins/jquery/waypoints.min.js"></script>
-    <script src="{{ site.url }}/plugins/counter-up/jquery.counterup.min.js"></script>
-    <script src="{{ site.url }}/plugins/isotope/isotope.min.js"></script>
-    <script src="{{ site.url }}/plugins/isotope/jquery.fancybox.pack.js"></script>
-    <script src="{{ site.url }}/plugins/isotope/isotope-triger.js"></script>
-    <script src="{{ site.url }}/plugins/countdown/jquery.syotimer.js"></script>
-    <script src="{{ site.url }}/plugins/slick/slick.min.js"></script>
-    <script src="{{ site.url }}/js/custom.js"></script>
+    <script src="/assets/jquery-2.2.4.min.js"></script>
+    <script src="/assets/bootstrap.min.js"></script>
+    <script src="/assets/custom.js"></script>
   </body>
 </html>

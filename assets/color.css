@@ -93,7 +93,7 @@ a,
 .rooms-types-aria .roomCategory .roomAdvantage li a:hover,
 .thumbnail.deals .caption .captionTitle h4:hover,
 .travelTipsSection .travelTipsContent .readMoreBtn:hover {
-  color: #b88752;
+  color: #be9457;
 }
 
 .navbar-nav > li > a:hover,
@@ -112,12 +112,12 @@ a,
 .subscribSection .amazingSelectbox .searchHotelBtn .buttonCustomPrimary,
 .searchFilter .sbOptions a:hover,
 .sort-by-section .sort-select-box .sbHolder .sbOptions li a:hover {
-  color: #b88752 !important;
+  color: #be9457 !important;
 }
 
 .searchTour .sbOptions a:hover,
 .bookingDrop .sbOptions a:hover {
-  color: #b88752 !important;
+  color: #be9457 !important;
 }
 
 .buttonCustomPrimary,
@@ -163,7 +163,7 @@ a,
 .settingSection .settingContent .buttonTransparent,
 .signupLoging .modal-body .btn-default,
 .searchDestinationSection .searchDestination .tab-content .tab-pane .searchbtn .btn-default {
-  background-color: #b88752;
+  background-color: #be9457;
 }
 
 .buttonTransparent:hover,
@@ -194,8 +194,8 @@ a,
 .packageSAleSection .buttonSale .buttonTransparent:hover,
 .profileSection .profileContent .profileSocialIcon a:hover i,
 .settingSection .settingContent .changeSetting .form-check .checkbox-custom:checked + .checkbox-custom-label:before {
-  background-color: #b88752;
-  border-color: #b88752;
+  background-color: #be9457;
+  border-color: #be9457;
 }
 
 .modal.bookingModal .modal-dialog .modal-content,
@@ -215,12 +215,12 @@ a,
 .travelGuideSection .travelGuideContent .buttonCustomPrimary:hover,
 .hotelListSidebar .panel-heading-title,
 .signupLoging .modal-header {
-  border-color: #b88752;
+  border-color: #be9457;
 }
 
 .navbar-fixed-top.lightHeader .navbar-nav > li > a:hover,
 .teamMember .maskingArea .list-inline li a:hover {
-  border-color: #b88752;
+  border-color: #be9457;
 }
 
 .countUpSection .icon {
@@ -228,5 +228,5 @@ a,
 }
 
 .recentOfferSection .needhelpAria .needHelpContent .btn-default {
-  background-color: #b88752 !important;
+  background-color: #be9457 !important;
 }
