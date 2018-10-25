@@ -93,7 +93,7 @@ a,
 .rooms-types-aria .roomCategory .roomAdvantage li a:hover,
 .thumbnail.deals .caption .captionTitle h4:hover,
 .travelTipsSection .travelTipsContent .readMoreBtn:hover {
-  color: #be9457;
+  color: #01ace4;
 }
 
 .navbar-nav > li > a:hover,
@@ -112,12 +112,12 @@ a,
 .subscribSection .amazingSelectbox .searchHotelBtn .buttonCustomPrimary,
 .searchFilter .sbOptions a:hover,
 .sort-by-section .sort-select-box .sbHolder .sbOptions li a:hover {
-  color: #be9457 !important;
+  color: #01ace4 !important;
 }
 
 .searchTour .sbOptions a:hover,
 .bookingDrop .sbOptions a:hover {
-  color: #be9457 !important;
+  color: #01ace4 !important;
 }
 
 .buttonCustomPrimary,
@@ -163,7 +163,7 @@ a,
 .settingSection .settingContent .buttonTransparent,
 .signupLoging .modal-body .btn-default,
 .searchDestinationSection .searchDestination .tab-content .tab-pane .searchbtn .btn-default {
-  background-color: #be9457;
+  background-color: #01ace4;
 }
 
 .buttonTransparent:hover,
@@ -194,8 +194,8 @@ a,
 .packageSAleSection .buttonSale .buttonTransparent:hover,
 .profileSection .profileContent .profileSocialIcon a:hover i,
 .settingSection .settingContent .changeSetting .form-check .checkbox-custom:checked + .checkbox-custom-label:before {
-  background-color: #be9457;
-  border-color: #be9457;
+  background-color: #01ace4;
+  border-color: #01ace4;
 }
 
 .modal.bookingModal .modal-dialog .modal-content,
@@ -212,21 +212,22 @@ a,
 .bookingForm .commentsForm .checkbox input[type=checkbox],
 .bookingForm .modal.bookingModal .modal-dialog .modal-content .modal-body .checkbox input[type=checkbox],
 .modal.bookingModal .modal-dialog .modal-content .bookingForm .modal-body .checkbox input[type=checkbox],
-.travelGuideSection .travelGuideContent .buttonCustomPrimary:hover,
+.footer-light .footerContent .list-inline li a:hover,
 .hotelListSidebar .panel-heading-title,
 .signupLoging .modal-header {
-  border-color: #be9457;
+  border-color: #01ace4;
 }
 
 .navbar-fixed-top.lightHeader .navbar-nav > li > a:hover,
-.teamMember .maskingArea .list-inline li a:hover {
-  border-color: #be9457;
+.teamMember .maskingArea .list-inline li a:hover,
+.travelGuideSection .travelGuideContent .buttonCustomPrimary:hover {
+  border-color: #01ace4;
 }
 
 .countUpSection .icon {
-  background-color: rgba(255, 137, 30, 0.9);
+  background-color: rgba(1, 172, 228, 0.9);
 }
 
 .recentOfferSection .needhelpAria .needHelpContent .btn-default {
-  background-color: #be9457 !important;
+  background-color: #01ace4 !important;
 }
