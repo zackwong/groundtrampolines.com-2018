@@ -50,9 +50,32 @@
         <div class="footer clearfix">
           <div class="container">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="footerContent">
-                  <a href="{{ site.url }}" class="footer-logo"><img src="/images/assets/hxd-logo-foot.png" alt="Flexwarm-logo"></a>
+                  <a href="{{ site.url }}" class="footer-logo"><img src="/images/assets/hxd-logo-foot.png" alt="HDX Logo"></a>
+                  <p>Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids.</p>
+                  <a href="{{ site.url }}/about/" class="btn buttonTransparent" style="margin-top:20px;">Learn More</a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                <div class="footerContent">
+                  <h5>Trampoline</h5>
+                  <ul class="list-unstyled">{% for post in site.categories["trampoline"] %}
+                    <li><i class="fa fa-check-square"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="footerContent">
+                  <h5>Last News</h5>
+                  <ul class="list-unstyled">{% for post in site.categories["news"] limit:3 %}
+                    <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="footerContent">
+                  <h5>Contact Us</h5>
                   <ul class="list-unstyled">
                     <li><i class="fa fa-home"></i>{{ site.address }}</li>
                     <li><i class="fa fa-phone"></i>{{ site.tel }}</li>
@@ -63,22 +86,6 @@
                     <li><a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="footerContent">
-                  <h5>Trampoline</h5>
-                  <ul class="list-unstyled">{% for post in site.categories["trampoline"] %}
-                    <li><i class="fa fa-check-square"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                <div class="footerContent">
-                  <h5>Last News</h5>
-                  <ul class="list-unstyled">{% for post in site.categories["news"] limit:3 %}
-                    <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
                   </ul>
                 </div>
               </div>
