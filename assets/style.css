@@ -2467,7 +2467,7 @@ header {
 
 @media (max-width: 767px) {
   .lightHeader .navbar-brand {
-    background-size: 152px 40px !important;
+    background-size: 139px 40px !important;
     margin-top: 0;
     height: 83px;
   }
