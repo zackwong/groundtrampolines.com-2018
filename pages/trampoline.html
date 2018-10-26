@@ -9,7 +9,7 @@ title: Trampoline
     <div class="row">{% for post in site.categories["trampoline"] %}
       <div class="col-sm-6 col-lg-4 col-xs-12">
         <div class="thumbnail deals hotelgrid">
-          <a href="{{ site.url }}{{ post.url }}"><img src="/images/trampoline/heating-eyeshade.jpg" alt="{{ post.title }}"></a>
+          <a href="{{ site.url }}{{ post.url }}"><img src="/images/trampoline/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
           <div class="caption text-center">
             <h4><a href="{{ site.url }}{{ post.url }}" class="captionTitle">{{ post.title }}</a></h4>
           </div>
