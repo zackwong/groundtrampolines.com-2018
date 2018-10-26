@@ -9,8 +9,8 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <meta name="applicable-device" content="pc,mobile">
-    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/flexwarm-icon.jpg">
-    <meta name="apple-mobile-web-app-title" content="Flexwarm">
+    <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/hxd-icon.jpg">
+    <meta name="apple-mobile-web-app-title" content="HXD">
     <link href="/assets/bootstrap.css" rel="stylesheet">
     <link href="/assets/font-awesome.css" rel="stylesheet">
     <link href="/assets/style.css" rel="stylesheet">
@@ -36,33 +36,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown singleDrop {% if page.category == 'about' %}active{% endif %}">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="{{ site.url }}/about/">About Flexwarm</a></li>
-                    <li><a href="{{ site.url }}/history/">Flexwarm History</a></li>
-                    <li><a href="{{ site.url }}/team/">Flexwarm Team</a></li>
-                    <li><a href="{{ site.url }}/honors/">Flexwarm Honors</a></li>
-                    <li><a href="{{ site.url }}/factory/">Flexwarm Factory</a></li>
-                    <li><a href="{{ site.url }}/corporate-social-responsibility/">Corporate Social Responsibility</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown singleDrop {% if page.category == 'technologies' %}active{% endif %}">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Technologies</a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="{{ site.url }}/flexwarm/">Flexwarm Heating Technology</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown singleDrop {% if page.category == 'products' %}active{% endif %}">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="{{ site.url }}/home-appliance/">Home Appliance</a></li>
-                    <li><a href="{{ site.url }}/smart-clothes/">Smart Clothes</a></li>
-                    <li><a href="{{ site.url }}/smart-wear/">Smart Wear</a></li>
-                    <li><a href="{{ site.url }}/app/">App</a></li>
-                  </ul>
-                </li>
                 <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
+                <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
+                <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/contact/">About HXD</a></li>
                 <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
               </ul>
             </div>
@@ -76,20 +52,12 @@
             <div class="row">
               <div class="col-sm-5 col-xs-12">
                 <div class="footerContent">
-                  <a href="{{ site.url }}" class="footer-logo"><img src="/images/assets/flexwarm-logo.png" alt="Flexwarm-logo"></a>
-                  <p>Leading by a senior engineer associated with Tiangong-1 in 2011, a group of hardworking engineers sweated on applying the military technologies, thick film heating technology and higher precision sensor technology, to products for civilian use.</p>
+                  <a href="{{ site.url }}" class="footer-logo"><img src="/images/assets/hxd-logo.png" alt="Flexwarm-logo"></a>
+                  <p></p>
                   <a href="{{ site.url }}/about/" class="btn buttonTransparent" style="margin-top:20px;">Learn More</a>
                 </div>
               </div>
-              <div class="col-sm-3 col-xs-12">
-                <div class="footerContent">
-                  <h5>Technologies</h5>
-                  <ul class="list-unstyled">
-                    <li><i class="fa fa-fire"></i><a href="{{ site.url }}/flexwarm/">Flexwarm Heating Technology</a></li>
-                    <li><i class="fa fa-cloud-download"></i><a href="{{ site.url }}/app/">Download app</a></li>
-                  </ul>
-                </div>
-              </div>
+              
               <div class="col-sm-4 col-xs-12">
                 <div class="footerContent">
                   <h5>Contact Us</h5>
@@ -112,7 +80,7 @@
         </div>
         <div class="copyRight clearfix">
           <div class="container">
-            <div class="col-sm-12 text-center">Copyright © 2011-2018 Guangdong Flexwarm Advanced Materials & Technology Co., Ltd | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+            <div class="col-sm-12 text-center">Copyright © 2011-2018 Good Brothers Sports Equipments Accessories Co., Ltd | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
           </div>
         </div>
       </footer>

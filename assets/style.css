@@ -1790,15 +1790,15 @@ header {
 
 .navbar-brand {
   float: left;
-  background-image: url("../images/assets/flexwarm-logo.png");
+  background-image: url("../images/assets/xhd-logo.png");
   background-position: 15px 19px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/assets/flexwarm-logo.png");
+  background-image: url("../images/assets/hxd-logo.png");
   background-position: 15px 19px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 235px;
+  width: 331px;
   height: 95px;
   background-color: transparent;
   padding: 24px 15px 24px 15px;
@@ -1806,14 +1806,14 @@ header {
 
 @media (max-width: 767px) {
   .navbar-brand {
-    background-size: 152px 40px !important;
+    background-size: 139px 40px !important;
     margin-top: 0;
   }
 }
 
 @media (min-width: 768px) {
   .navbar-brand {
-    background-size: 203px 54px !important;
+    background-size: 188px 54px !important;
   }
 }
 
@@ -1841,7 +1841,7 @@ header {
 }
 
 .lightHeader .navbar-brand {
-  background-image: url("../images/assets/flexwarmlogo.png");
+  background-image: url("../images/assets/xhd-logo.png");
   background-position: 15px 19px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1849,7 +1849,7 @@ header {
 
 @media (max-width: 767px) {
   .lightHeader .navbar-brand {
-    background-size: 152px 40px !important;
+    background-size: 139px 40px !important;
     margin-top: 0;
     height: 83px;
   }
@@ -1857,7 +1857,7 @@ header {
 
 @media (min-width: 768px) {
   .lightHeader .navbar-brand {
-    background-size: 203px 54px !important;
+    background-size: 188px 54px !important;
     height: 95px;
   }
 }
@@ -2459,7 +2459,7 @@ header {
 }
 
 .lightHeader .navbar-brand {
-  background-image: url("../images/assets/flexwarmlogo.png");
+  background-image: url("../images/assets/hxd-logo.png");
   background-position: 15px 19px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2475,7 +2475,7 @@ header {
 
 @media (min-width: 768px) {
   .lightHeader .navbar-brand {
-    background-size: 203px 54px !important;
+    background-size: 188px 54px !important;
     height: 95px;
   }
 }

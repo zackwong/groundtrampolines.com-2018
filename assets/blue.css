@@ -93,7 +93,7 @@ a,
 .rooms-types-aria .roomCategory .roomAdvantage li a:hover,
 .thumbnail.deals .caption .captionTitle h4:hover,
 .travelTipsSection .travelTipsContent .readMoreBtn:hover {
-  color: #01ace4;
+  color: #213e77;
 }
 
 .navbar-nav > li > a:hover,
@@ -112,12 +112,12 @@ a,
 .subscribSection .amazingSelectbox .searchHotelBtn .buttonCustomPrimary,
 .searchFilter .sbOptions a:hover,
 .sort-by-section .sort-select-box .sbHolder .sbOptions li a:hover {
-  color: #01ace4 !important;
+  color: #213e77 !important;
 }
 
 .searchTour .sbOptions a:hover,
 .bookingDrop .sbOptions a:hover {
-  color: #01ace4 !important;
+  color: #213e77 !important;
 }
 
 .buttonCustomPrimary,
@@ -163,7 +163,7 @@ a,
 .settingSection .settingContent .buttonTransparent,
 .signupLoging .modal-body .btn-default,
 .searchDestinationSection .searchDestination .tab-content .tab-pane .searchbtn .btn-default {
-  background-color: #01ace4;
+  background-color: #213e77;
 }
 
 .buttonTransparent:hover,
@@ -194,8 +194,8 @@ a,
 .packageSAleSection .buttonSale .buttonTransparent:hover,
 .profileSection .profileContent .profileSocialIcon a:hover i,
 .settingSection .settingContent .changeSetting .form-check .checkbox-custom:checked + .checkbox-custom-label:before {
-  background-color: #01ace4;
-  border-color: #01ace4;
+  background-color: #213e77;
+  border-color: #213e77;
 }
 
 .modal.bookingModal .modal-dialog .modal-content,
@@ -215,13 +215,13 @@ a,
 .footer-light .footerContent .list-inline li a:hover,
 .hotelListSidebar .panel-heading-title,
 .signupLoging .modal-header {
-  border-color: #01ace4;
+  border-color: #213e77;
 }
 
 .navbar-fixed-top.lightHeader .navbar-nav > li > a:hover,
 .teamMember .maskingArea .list-inline li a:hover,
 .travelGuideSection .travelGuideContent .buttonCustomPrimary:hover {
-  border-color: #01ace4;
+  border-color: #213e77;
 }
 
 .countUpSection .icon {
@@ -229,5 +229,5 @@ a,
 }
 
 .recentOfferSection .needhelpAria .needHelpContent .btn-default {
-  background-color: #01ace4 !important;
+  background-color: #213e77 !important;
 }
