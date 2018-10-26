@@ -38,7 +38,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="{% if page.category == 'trampoline' %}active{% endif %}"><a href="{{ site.url }}/trampoline/">Trampoline</a></li>
                 <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
-                <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/contact/">About HXD</a></li>
+                <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About HXD</a></li>
                 <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
               </ul>
             </div>
@@ -64,13 +64,13 @@
                   <ul class="list-unstyled">
                     <li><i class="fa fa-home"></i>{{ site.address }}</li>
                     <li><i class="fa fa-phone"></i>{{ site.tel }}</li>
+                    <li><i class="fa fa-phone"></i>{{ site.fax }}</li>
                     <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}">{{ site.email }}</a></li>
                   </ul>
                   <ul class="list-inline">
                     <li><a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="{{ site.youtube }}" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
                   </ul>
                 </div>
               </div>
