@@ -3,12 +3,10 @@ layout: pages
 ---
 <section class="mainContentSection">
   <div class="container">
-    <div class="col-xs-12">
-      <div class="sectionTitle">
-        <h2><span>{{ page.title }}</span></h2>
-      </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <img src="/images/trampoline/{{ page.image }}.jpg" class="img-responsive img-thumbnail" alt="{{ page.title }}">
     </div>
-    {{ content }}   
+    {{ content }}
   </div>
 </section>
 {% include trampoline-list.html %}
