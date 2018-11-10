@@ -3762,3 +3762,7 @@ header {
 .profileSection:hover .editIconRight {
   display: block;
 }
+
+.margin-top-30 {
+  margin-top: 30px;
+}
