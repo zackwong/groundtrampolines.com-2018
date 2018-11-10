@@ -3,6 +3,7 @@ layout: products-article
 permalink: /trampoline/inground-trampoline-9600zh.html
 category: trampoline
 image: inground-trampoline-9600zh
+video: 
 title: Inground Trampoline 9600ZH
 keywords: Inground Trampoline 9600ZH
 description: Inground Trampoline 9600ZH
@@ -49,4 +50,9 @@ description: Inground Trampoline 9600ZH
   <p>It brings more sports fun to children, it can promote children's growth and development, exercise muscles and balance. Improving coordination, symmetry, rhythm, and accuracy of movement.</p>
   <h4 class="margin-top-30">Exercise method</h4>
   <p>Standing in the middle of the trampoline mesh and jump up and down.</p>
-</div>
+</div>{% if page.video == 'wu' %}{% else %}
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-30">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{{ page.video }}"></iframe>
+  </div>
+</div>{% endif %}
