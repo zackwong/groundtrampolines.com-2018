@@ -11,11 +11,16 @@ layout: pages
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="item active"><a href="/images/trampoline/{{ page.image }}-1.jpg" data-fancybox="images"><img src="/images/trampoline/{{ page.image }}-1.jpg" alt="{{ page.title }}"></div>
+          <div class="item active"><a href="/images/trampoline/{{ page.image }}-1.jpg" data-fancybox="images"><img src="/images/trampoline/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
           <div class="item"><a href="/images/trampoline/{{ page.image }}-1.jpg" data-fancybox="images"><img src="/images/trampoline/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
           <div class="item"><a href="/images/trampoline/{{ page.image }}-1.jpg" data-fancybox="images"><img src="/images/trampoline/{{ page.image }}-1.jpg" alt="{{ page.title }}"></a></div>
         </div>
       </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h2 class="text-center">{{ page.title }}</h2>
+      <p>{{ page.features }}</p>
+      <p><a href="mailTo:{{ site.email }}" class="btn buttonTransparent">Email Us</a></p>
     </div>
     {{ content }}
   </div>
