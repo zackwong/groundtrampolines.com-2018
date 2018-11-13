@@ -3,6 +3,7 @@
 2. UI KIT
 	2.1 BUTTON
 	2.2 SECTION TITLE
+  2.5 ACCORDION
 	2.8 THUMBNAIL
 3. HEADER
 	3.2 LIGHT HEADER
@@ -397,6 +398,136 @@ a:focus {
   font-weight: 400;
   line-height: 21px;
   color: #222222;
+}
+
+/*=== 2.5 ACCORDION ===*/
+.accordionWrappar {
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .accordionWrappar {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordionWrappar {
+    margin-bottom: 0;
+  }
+}
+
+.accordionsTransparent .panel-group {
+  margin-bottom: 15px;
+}
+
+.accordionsTransparent .panel-group .panel {
+  border: none;
+  border-radius: 0;
+}
+
+.accordionsTransparent .panel-group .panel-heading {
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #969696;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0;
+}
+
+.accordionsTransparent .panel-group .panel-heading i {
+  line-height: 22px;
+}
+
+.accordionsTransparent .panel-group .panel-heading.hideBorder {
+  border: none;
+}
+
+.accordionsTransparent .panel-group .panel-heading:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$value)";
+  filter: alpha(opacity=1);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+.accordionsTransparent .panel-group .panel-body .media img {
+  border-radius: 4px;
+}
+
+.accordionsTransparent .panel-default > a.panel-heading {
+  display: block;
+}
+
+.accordionsTransparent .panel-default > a.panel-heading:focus {
+  text-decoration: none;
+}
+
+.accordionsTransparent .panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.accordionsTransparent .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border: none !important;
+}
+
+.accordionsTransparent .panel {
+  box-shadow: none;
+}
+
+.accordionsTransparent .panel-heading.active {
+  color: #ff891e;
+  border: none;
+}
+
+.accordionsTransparent .panel-collapse.active {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.accordionsTransparent .solidBgTitle .panel {
+  margin-bottom: 20px;
+}
+
+.accordionsTransparent .solidBgTitle .panel-heading {
+  background-color: #ff891e;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.accordionsTransparent .solidBgTitle .panel-body {
+  background-color: whitesmoke;
+  border-radius: 0 0 4px 4px;
+}
+
+.accordionsTransparent .solidBgTitle .panel-collapse {
+  border-radius: 0 0 4px 4px;
+}
+
+.accordionsTransparent .accordionSolidTitle .panel, .accordionsTransparent .accordionSolidBar .panel {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.accordionsTransparent .accordionSolidTitle .panel-heading, .accordionsTransparent .accordionSolidBar .panel-heading {
+  background-color: #ffffff;
+  color: #222222;
+  border: none;
+  border-radius: 4px;
+}
+
+.accordionsTransparent .accordionSolidTitle .panel-heading.active, .accordionsTransparent .accordionSolidBar .panel-heading.active {
+  color: #ffffff;
+  background-color: #ff891e;
+}
+
+.accordionsTransparent .accordionSolidTitle .panel-collapse.active, .accordionsTransparent .accordionSolidBar .panel-collapse.active {
+  background-color: transparent;
+  border: none;
 }
 
 /*=== 2.8 THUMBNAIL ===*/
