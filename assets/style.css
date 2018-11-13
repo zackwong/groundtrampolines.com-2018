@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #969696;
@@ -60,7 +60,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #262a2e;
   margin-top: 0;
@@ -1911,7 +1911,7 @@ header {
 
 .headerTop .headerTopNav .headerTopNavbar li a {
   color: #969696;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 21px;
 }
@@ -2056,7 +2056,7 @@ header {
   margin-top: 25px;
   margin-bottom: 35px;
   text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .footerContent p {
@@ -2529,7 +2529,7 @@ header {
 
 .headerTop .headerTopNav .headerTopNavbar li a {
   color: #969696;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 21px;
 }
@@ -2674,7 +2674,7 @@ header {
   margin-top: 25px;
   margin-bottom: 35px;
   text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .footerContent p {
