@@ -44,7 +44,7 @@ groundtrampolines.com-2018
 下载及生成网站
 -----
 
-1. 下载网站源码: ``git clone git://github.com/zackwong/groundtrampolines.com-2018.git``
+1. 下载网站源码: ``git clone git@github.com:zackwong/groundtrampolines.com-2018.git``
 
 2. 进入源码根目录: ``cd groundtrampolines.com-2018``
 
