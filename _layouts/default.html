@@ -11,89 +11,90 @@
     <meta name="applicable-device" content="pc,mobile">
     <link rel="apple-touch-icon" href="{{ site.url }}/images/assets/hxd-icon.jpg">
     <meta name="apple-mobile-web-app-title" content="HXD">
-    <link href="/assets/bootstrap.css" rel="stylesheet">
-    <link href="/assets/font-awesome.css" rel="stylesheet">
-    <link href="/assets/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/blue.css">
-    <link rel="stylesheet" href="/assets/jquery.fancybox.css">
+    <link type="text/css" rel="stylesheet" href="/assets/application.css">
     <!--[if lt IE 9]>
       <script src="/assets/html5shiv.min.js"></script>
       <script src="/assets/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="body-wrapper">
-    <div class="main-wrapper">
-      <header>
-        <nav class="navbar navbar-default navbar-main navbar-fixed-top lightHeader" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="{{ site.url }}"></a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="{% if page.category == 'trampoline' %}active{% endif %}"><a href="{{ site.url }}/trampoline/">Trampoline</a></li>
-                <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
-                <li class="{% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About HXD</a></li>
-                <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
+  <body>
+    <header id="luxbar" class="luxbar-fixed">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox">
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-white">
+        <div class="container">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <a href="{{ site.url }}"><img src="{{ site.url }}/images/assets/wanjinlong-logo.png" width="270" height="53" alt="WANJINLONG Logo"></a>
+              <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+            </li>
+            <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a>Products</a>
+              <ul>
+                <li class="luxbar-item {% if page.type-en == 'trampoline' %}active{% endif %}"><a href="{{ site.url }}/trampoline/">Trampoline</a></li>
               </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      {{ content }}
-      <footer>
-        <div class="footer clearfix">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-xs">
-                <div class="footerContent">
-                  <a href="{{ site.url }}" class="footer-logo"><img src="/images/assets/hxd-logo-foot.png" alt="HDX Logo"></a>
-                  <p class="text-justify">Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids. <a href="{{ site.url }}/about/">Learn More</a></p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-xs">
-                <div class="footerContent">
-                  <h5>Last News</h5>
-                  <ul class="list-unstyled">{% for post in site.categories["news"] limit:3 %}
-                    <li><i class="fa fa-angle-double-right"></i><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            </li>
+            <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
+            <li class="luxbar-item {% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About HXD</a></li>
+            <li class="luxbar-item {% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="margin-top-58"></div>
+    {{ content }}
+    <footer>
+      <div class="footer clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <div itemscope itemtype="http://schema.org/Organization">
                 <div class="footerContent">
                   <h5>Contact Us</h5>
                   <ul class="list-unstyled">
-                    <li><i class="fa fa-home"></i>{{ site.address }}</li>
-                    <li><i class="fa fa-phone"></i>{{ site.tel }}</li>
-                    <li><i class="fa fa-fax"></i>{{ site.fax }}</li>
-                    <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}">{{ site.email }}</a></li>
+                    <li><i class="fa fa-home"></i><span itemprop="address">{{ site.address }}</span></li>
+                    <li><i class="fa fa-phone"></i><a href="tel:{{ site.tel }}"><span itemprop="telephone">{{ site.tel }}</span></a></li>
+                    <li><i class="fa fa-fax"></i><span itemprop="faxNumber">{{ site.fax }}</span></li>
+                    <li><i class="fa fa-envelope-o"></i><a href="mailTo:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></li>
                   </ul>
                   <ul class="list-inline">
-                    <li><a href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a itemprop="url" href="{{ site.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a itemprop="url" href="{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a itemprop="url" href="{{ site.linkedin }}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
             </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerContent">
+                <h5>Products</h5>
+                <ul class="list-unstyled">
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5 col-xs-12 hidden-xs">
+              <div class="footerContent">
+                <h5>Last News</h5>
+                <ul class="list-unstyled">{% for post in site.categories["news"] limit:6 %}
+                  <div itemscope itemtype="http://schema.org/Article">
+                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></li>{% endfor %}
+                  </div>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="copyRight clearfix">
-          <div class="container">
-            <div class="col-sm-12 text-center">Copyright © 1998-2019 Good Brothers Sports Equipments Accessories Co., Ltd | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
+      </div>
+      <div class="copyRight clearfix">
+        <div class="container">
+          <div itemscope itemtype="http://schema.org/Organization">
+            <div class="col-sm-12 text-center">Copyright © 1998-2019 <span itemprop="name">Good Brothers Sports Equipments Accessories Co., Ltd</span> | <a href="{{ site.url }}/sitemap.xml" target="_blank">Sitemap</a> | Website design by <a href="https://gdky.net" target="_blank">OSW</a></div>
           </div>
         </div>
-      </footer>
-    </div>
-    <script src="/assets/jquery-2.2.4.min.js"></script>
-    <script src="/assets/bootstrap.min.js"></script>
-    <script src="/assets/custom.js"></script>
-    <script src="/assets/jquery.fancybox.min.js"></script>
+      </div>
+    </footer>
+    <div class="back-to-top"><a href="#"><img src="{{ site.url }}/images/assets/up.png" width="26" height="26" alt="Back To Top"></a></div>{% if page.category == 'home' %}
+    <script type="text/javascript" src="/assets/application.js"></script>{% endif %}
   </body>
 </html>

@@ -3,25 +3,45 @@ layout: default
 category: home
 full_title: GOOD BROTHERS SPORTS
 ---
-<div class="row" style="margin-top:95px;">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active"><img src="/images/home/billboard-1.jpg" alt=""></div>
-      <div class="item"><img src="/images/home/billboard-2.jpg" alt=""></div>
-      <div class="item"><img src="/images/home/billboard-3.jpg" alt=""></div>
-      <div class="item"><img src="/images/home/billboard-4.jpg" alt=""></div>
-      <div class="item"><img src="/images/home/billboard-5.jpg" alt=""></div>
-    </div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"><img src="/images/home/billboard-1.jpg" alt=""></div>
+    <div class="item"><img src="/images/home/billboard-2.jpg" alt=""></div>
+    <div class="item"><img src="/images/home/billboard-3.jpg" alt=""></div>
+    <div class="item"><img src="/images/home/billboard-4.jpg" alt=""></div>
+    <div class="item"><img src="/images/home/billboard-5.jpg" alt=""></div>
   </div>
 </div>
-{% include trampoline-list.html %}
+<section class="mainContentSection packagesSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">Products</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div itemscope itemtype="http://schema.org/Article">
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="thumbnail deals hotelgrid">
+            <a itemprop="url" href="{{ site.url }}/trampoline/"><img itemprop="thumbnailUrl" src="/images/products/trampoline.jpg" alt="trampoline"></a>
+            <div class="caption text-center">
+              <h4 class="captionTitle"><span itemprop="headline">trampoline</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="whiteSection">
   <div class="container">
     <div class="row">
@@ -32,33 +52,44 @@ full_title: GOOD BROTHERS SPORTS
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
-        <p align="center"><a href="{{ site.url }}/about/"><img class="img-responsive" alt="About Good Brothers Sports" src="/images/home/about.jpg"></a></p>
-      </div>
-      <div class="col-lg-6">
-        <h3 style="margin-top:20px;margin-bottom:20px">Good Brothers Sports</h3>
-        <p class="text-justify" style="margin-bottom:20px">Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids. Through company's continuous investment in research and technological innovation, with management of ISO9001:2000, we are proud to bring the third-generation buried playground trampoline to kids around the world. This revolutionary product brings kids more fun experience while ensuring their absolute safety. Different shapes and colors bring this product ability to blend in with the landscape, whether it is a playground or a backyard garden, it can be easily and efficiently installed.</p>
-        <p><a href="{{ site.url }}/about/" class="btn buttonTransparent">Learn More</a></p>
+      <div itemscope itemtype="http://schema.org/Organization">
+        <div class="col-lg-6">
+          <p align="center"><a itemprop="url" href="{{ site.url }}/about/"><img itemprop="image" class="img-responsive img-thumbnail margin-bottom-20" alt="About Good Brothers Sports" src="/images/home/about.jpg"></a></p>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="margin-top-10 margin-bottom-20"><span itemprop="name">Good Brothers Sports</span></h3>
+          <p class="text-justify margin-bottom-20"><span itemprop="description">Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids. Through company's continuous investment in research and technological innovation, with management of ISO9001:2000, we are proud to bring the third-generation buried playground trampoline to kids around the world. This revolutionary product brings kids more fun experience while ensuring their absolute safety. Different shapes and colors bring this product ability to blend in with the landscape, whether it is a playground or a backyard garden, it can be easily and efficiently installed.</span></p>
+          <p><a itemprop="url" href="{{ site.url }}/about/" class="btn buttonTransparent">Learn More</a></p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section class="mainContentSection packagesSection">
   <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="sectionTitle">
+          <h2><span class="lightBg">News</span></h2>
+        </div>
+      </div>
+    </div>
     <div class="row">{% for post in site.categories["news"] limit:3 %}
-      <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail blogPostItem">
-          <a href="{{ site.url }}{{ post.url }}">
-            <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
-          </a>
-          <div class="caption">
-            <h3><a href="{{ site.url }}{{ post.url }}" class="blogTitle">{{ post.title }}</a></h3>
-            <ul class="list-inline blogInfo">
-              <li><i class="fa fa-calendar"></i>{{ post.date | date:"%d %b %Y" }}</li>
-              <li><i class="fa fa-tags"></i>{{ post.keywords }}</li>
-            </ul>
-            <p>{{ post.description }}</p>
-            <a href="{{ site.url }}{{ post.url }}" class="btn buttonTransparent">Read More</a>
+      <div itemscope itemtype="http://schema.org/Article">
+        <div class="col-sm-4 col-xs-12">
+          <div class="thumbnail blogPostItem">
+            <a itemprop="url" href="{{ site.url }}{{ post.url }}">
+              <img itemprop="thumbnailUrl" src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
+            </a>
+            <div class="caption text-center">
+              <h3><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="blogTitle"><span itemprop="headline">{{ post.title }}</span></a></h3>
+              <ul class="list-inline blogInfo">
+                <li><i class="fa fa-calendar"></i><span itemprop="dateCreated">{{ post.date | date:"%d %b %Y" }}</span></li>
+                <li><i class="fa fa-tags"></i><span itemprop="keywords">{{ post.keywords }}</span></li>
+              </ul>
+              <p><span itemprop="description">{{ post.description }}</span></p>
+              <a itemprop="url" href="{{ site.url }}{{ post.url }}" class="btn buttonTransparent">Read More</a>
+            </div>
           </div>
         </div>
       </div>{% endfor %}
