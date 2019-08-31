@@ -68,7 +68,7 @@
                 <h5>Products</h5>
                 <ul class="list-unstyled">
                   <div itemscope itemtype="http://schema.org/Product">
-                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
                   </div>
                 </ul>
               </div>
@@ -78,7 +78,7 @@
                 <h5>Last News</h5>
                 <ul class="list-unstyled">{% for post in site.categories["news"] limit:6 %}
                   <div itemscope itemtype="http://schema.org/Article">
-                    <li><i class="fa fa-angle-double-right"></i><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></li>{% endfor %}
+                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></li>{% endfor %}
                   </div>
                 </ul>
               </div>
