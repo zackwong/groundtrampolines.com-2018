@@ -713,7 +713,13 @@ a.thumbnail.active {
 }
 /*table*/
 table {
+  border-collapse: collapse;
+  border-spacing: 0;
   background-color: transparent;
+}
+td,
+th {
+  padding: 0;
 }
 caption {
   padding-top: 8px;
