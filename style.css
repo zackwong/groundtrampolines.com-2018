@@ -712,6 +712,18 @@ a.thumbnail.active {
   color: #213e77;
 }
 /*table*/
+table {
+  background-color: transparent;
+}
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
 .table {
   width: 100%;
   max-width: 100%;
