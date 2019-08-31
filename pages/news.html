@@ -5,24 +5,28 @@ category: news
 title: News
 ---
 <section class="mainContentSection packagesSection">
-  <div class="container">
-    <div class="row">{% for post in site.categories["news"] %}
-      <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail blogPostItem">
-          <a href="{{ site.url }}{{ post.url }}">
-            <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
-          </a>
-          <div class="caption">
-            <h3><a href="{{ site.url }}{{ post.url }}" class="blogTitle">{{ post.title }}</a></h3>
-            <ul class="list-inline blogInfo">
-              <li><i class="fa fa-calendar"></i>{{ post.date | date:"%d %b %Y" }}</li>
-              <li><i class="fa fa-tags"></i>{{ post.keywords }}</li>
-            </ul>
-            <p>{{ post.description }}</p>
-            <a href="{{ site.url }}{{ post.url }}" class="btn buttonTransparent">Read More</a>
+  <div class="container">{% for post in site.categories["news"] %}
+    <div itemscope itemtype="http://schema.org/Article">
+      <div class="thumbnail blogPostItem">
+        <div class="col-lg-6 col-md-6">
+          <div class="row">
+            <a href="{{ site.url }}{{ post.url }}">
+              <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
+            </a>
           </div>
         </div>
-      </div>{% endfor %}
-    </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="caption">
+            <h3 class="text-center"><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="blogTitle"><span itemprop="headline">{{ post.title }}</span></a></h3>
+            <ul class="list-inline blogInfo text-center">
+              <li><i class="fa fa-calendar"></i><span itemprop="dateCreated">{{ post.date | date:"%d %b %Y" }}</span></li>
+              <li><i class="fa fa-tags"></i><span itemprop="keywords">{{ post.keywords }}</span></li>
+            </ul>
+            <p><span itemprop="description">{{ post.description }}</span></p>
+            <p class="text-center"><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="btn buttonTransparent">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>{% endfor %}
   </div>
 </section>

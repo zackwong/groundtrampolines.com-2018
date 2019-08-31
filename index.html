@@ -22,7 +22,7 @@ full_title: GOOD BROTHERS SPORTS
 <section class="mainContentSection packagesSection">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-lg-12 col-md-12">
         <div class="sectionTitle">
           <h2><span class="lightBg">Products</span></h2>
         </div>
@@ -30,8 +30,8 @@ full_title: GOOD BROTHERS SPORTS
     </div>
     <div class="row">
       <div itemscope itemtype="http://schema.org/Article">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-          <div class="thumbnail deals hotelgrid">
+        <div class="col-lg-4 col-md-6 margin-bottom-30">
+          <div class="thumbnail deals">
             <a itemprop="url" href="{{ site.url }}/trampoline/"><img itemprop="thumbnailUrl" src="/images/products/trampoline.jpg" alt="trampoline"></a>
             <div class="caption text-center">
               <h4 class="captionTitle"><span itemprop="headline">Trampoline</span></h4>
@@ -43,10 +43,10 @@ full_title: GOOD BROTHERS SPORTS
     </div>
   </div>
 </section>
-<section class="whiteSection">
+<section class="mainContentSection">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-lg-12 col-md-12">
         <div class="sectionTitle">
           <h2><span>About HXD</span></h2>
         </div>
@@ -54,10 +54,10 @@ full_title: GOOD BROTHERS SPORTS
     </div>
     <div class="row">
       <div itemscope itemtype="http://schema.org/Organization">
-        <div class="col-lg-6">
-          <p align="center"><a itemprop="url" href="{{ site.url }}/about/"><img itemprop="image" class="img-responsive img-thumbnail margin-bottom-20" alt="About Good Brothers Sports" src="/images/home/about.jpg"></a></p>
+        <div class="col-lg-6 col-md-6">
+          <p align="center"><a itemprop="url" href="{{ site.url }}/about/"><img itemprop="image" class="img-responsive margin-bottom-20" alt="About Good Brothers Sports" src="/images/home/about.jpg"></a></p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6">
           <h3 class="margin-top-10 margin-bottom-20"><span itemprop="name">Good Brothers Sports</span></h3>
           <p class="text-justify margin-bottom-20"><span itemprop="description">Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids. Through company's continuous investment in research and technological innovation, with management of ISO9001:2000, we are proud to bring the third-generation buried playground trampoline to kids around the world. This revolutionary product brings kids more fun experience while ensuring their absolute safety. Different shapes and colors bring this product ability to blend in with the landscape, whether it is a playground or a backyard garden, it can be easily and efficiently installed.</span></p>
           <p><a itemprop="url" href="{{ site.url }}/about/" class="btn buttonTransparent">Learn More</a></p>
@@ -69,7 +69,7 @@ full_title: GOOD BROTHERS SPORTS
 <section class="mainContentSection packagesSection">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-lg-12 col-md-12">
         <div class="sectionTitle">
           <h2><span class="lightBg">News</span></h2>
         </div>
@@ -77,7 +77,7 @@ full_title: GOOD BROTHERS SPORTS
     </div>
     <div class="row">{% for post in site.categories["news"] limit:3 %}
       <div itemscope itemtype="http://schema.org/Article">
-        <div class="col-sm-4 col-xs-12">
+        <div class="col-lg-4 col-md-4">
           <div class="thumbnail blogPostItem">
             <a itemprop="url" href="{{ site.url }}{{ post.url }}">
               <img itemprop="thumbnailUrl" src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
