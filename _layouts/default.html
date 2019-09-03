@@ -32,7 +32,6 @@
                 <li class="luxbar-item {% if page.type-en == 'trampoline' %}active{% endif %}"><a href="{{ site.url }}/trampoline/">Trampoline</a></li>
               </ul>
             </li>
-            <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
             <li class="luxbar-item {% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About HXD</a></li>
             <li class="luxbar-item {% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
           </ul>
@@ -45,6 +44,25 @@
       <div class="footer">
         <div class="container">
           <div class="row">
+            <div class="col-lg-5 col-md-12 hidden-xs">
+              <div class="footerContent">
+                <h5>About HDX</h5>
+                <p>Good Brothers Sports is the only manufacture producing in ground trampoline in China. Since established in 2004, the family founder committed to producing whole world's safest and most interesting playground trampoline for kids. Through company's continuous investment in research and technological innovation, with management of ISO9001:2000, we are proud to bring the third-generation buried playground trampoline to kids around the world. This revolutionary product brings kids more fun experience while ensuring their absolute safety. Different shapes and colors bring this product ability to blend in with the landscape, whether it is a playground or a backyard garden, it can be easily and efficiently installed.</p>
+                <a href="{{ site.url }}/about/" class="btn buttonTransparent margin-top-20">Learn More</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="footerContent">
+                <h5>Products</h5>
+                <ul class="list-unstyled">
+                  <div itemscope itemtype="http://schema.org/Product">
+                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
             <div class="col-lg-4 col-md-12">
               <div itemscope itemtype="http://schema.org/Organization">
                 <div class="footerContent">
@@ -62,27 +80,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-12">
-              <div class="footerContent">
-                <h5>Products</h5>
-                <ul class="list-unstyled">
-                  <div itemscope itemtype="http://schema.org/Product">
-                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-5 col-md-12 hidden-xs">
-              <div class="footerContent">
-                <h5>Last News</h5>
-                <ul class="list-unstyled">{% for post in site.categories["news"] limit:6 %}
-                  <div itemscope itemtype="http://schema.org/Article">
-                    <li><i class="fa fa-angle-double-right"></i> <a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="headline">{{ post.title }}</span></a></li>{% endfor %}
-                  </div>
-                </ul>
-              </div>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
