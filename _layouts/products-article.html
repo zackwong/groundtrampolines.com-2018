@@ -3,14 +3,6 @@ layout: pages
 ---
 <section class="mainContentSection">
   <div class="container">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <img src="/images/trampoline/{{ page.image }}.jpg" alt="{{ page.title }}" class="img-responsive img-thumbnail center-block">
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <h2 class="text-center margin-top-30">{{ page.title }}</h2>
-      <p class="margin-top-30 text-justify" style="font-size:16px">{{ page.features }}</p>
-      <p class="margin-top-30"><a href="mailTo:{{ site.email }}" class="btn buttonTransparent btn-block">Email Us</a></p>
-    </div>
     {{ content }}
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-top-30">
       <h3 class="margin-top-30">Trampoline Net Color</h3>
@@ -75,6 +67,7 @@ layout: pages
       <h4 class="margin-top-30">Q: Do these inground trampolines need special care?</h4>
       <p>The inground trampolines can be used for outdoor for long time without any special care, also they are water proof.</p>
     </div>
+    <p class="margin-top-30 text-center"><a href="mailTo:{{ site.email }}" class="btn buttonTransparent">Email Us</a></p>
   </div>
 </section>
 {% include products-list.html %}
