@@ -51,7 +51,7 @@ layout: pages
         <p class="text-center">Brown</p>
       </div>      
     </div>{% if page.video == 'wu' %}{% else %}
-    <div class="embed-responsive embed-responsive-16by9">
+    <div class="embed-responsive embed-responsive-16by9 margin-top-30">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video }}"></iframe>
     </div>{% endif %}
     <h3 class="margin-top-30">FAQ</h3>
@@ -68,12 +68,12 @@ layout: pages
     <p>Actually,we send the trampolins as one compeletly product, not parts, you can use it directly.</p>
     <h4 class="margin-top-30">Q: Do these inground trampolines need special care?</h4>
     <p>The inground trampolines can be used for outdoor for long time without any special care, also they are water proof.</p>
-  </div>
-  <div class="col-lg-6 col-md-6">
-    <p><a href="{{ page.download }}" class="btn buttonTransparent" target="_blank"><i class="fa fa-cloud-download"></i> Download Catalog</a></p>
-  </div>
-  <div class="col-lg-6 col-md-6">
-    <p><a href="{{ page.download }}" class="btn buttonTransparent" target="_blank"><i class="fa fa-envelope"></i> Email Us</a></p>
+    <div class="col-lg-6 col-md-6 margin-top-30">
+      <p><a href="{{ page.download }}" class="btn buttonTransparent" target="_blank"><i class="fa fa-cloud-download"></i> Download Catalog</a></p>
+    </div>
+    <div class="col-lg-6 col-md-6 margin-top-30">
+      <p><a href="{{ page.download }}" class="btn buttonTransparent" target="_blank"><i class="fa fa-envelope"></i> Email Us</a></p>
+    </div>
   </div>
 </section>
 {% include products-list.html %}
