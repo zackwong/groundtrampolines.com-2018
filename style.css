@@ -1176,6 +1176,9 @@ table th[class*="col-"] {
 .fa-angle-double-right:before {
   content: "\f101";
 }
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
 .fa-circle:before {
   content: "\f111";
 }
