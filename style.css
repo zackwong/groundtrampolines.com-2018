@@ -422,11 +422,6 @@ p {
 .buttonTransparentfocus {
   outline: 0;
 }
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
 /*color*/
 a,
 .thumbnail.deals .caption .captionTitle:hover,
