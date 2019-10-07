@@ -27,9 +27,9 @@
               <a href="{{ site.url }}"><img src="{{ site.url }}/images/assets/hxd-logo.png" width="185" height="53" alt="HXD Logo"></a>
               <label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
-            <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a>Products</a>
-              <ul>
-                <li class="luxbar-item {% if page.type-en == 'trampoline' %}active{% endif %}"><a href="{{ site.url }}/trampoline/">Trampoline</a></li>
+            <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a href="{{ site.url }}/products/">Products</a>
+              <ul>{% for post in site.categories["products"] %}
+                <li class="luxbar-item {% if post.title == page.title %}active{% endif %}"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
               </ul>
             </li>
             <li class="luxbar-item {% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About HXD</a></li>
@@ -54,10 +54,10 @@
             <div class="col-lg-4 col-md-12">
               <div class="footerContent">
                 <h5>Products</h5>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled">{% for post in site.categories["products"] %}
                   <div itemscope itemtype="http://schema.org/Product">
-                    <li><i class="fa fa-angle-double-right margin-right-10"></i><a itemprop="url" href="{{ site.url }}/trampoline/"><span itemprop="name">Trampoline</span></a></li>
-                  </div>
+                    <li><i class="fa fa-angle-double-right margin-right-10"></i><a itemprop="url" href="{{ site.url }}{{ post.url }}"><span itemprop="name">{{ post.title }}</span></a></li>
+                  </div>{% endfor %}
                 </ul>
               </div>
             </div>
