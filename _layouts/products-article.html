@@ -3,7 +3,36 @@ layout: pages
 ---
 <section class="mainContentSection">
   <div class="container">
-    {{ content }}
+    <div class="row">{% if page.pic == 'three' %}
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>{% endif %}{% if page.pic == 'six' %}
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-1.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-2.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-3.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-4.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-5.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>
+      <div class="col-lg-4 col-md-6 margin-bottom-30">
+        <img src="/images/products/{{ page.image }}-6.jpg" alt="{{ page.title }}" class="img-responsive">
+      </div>{% endif %}
+    </div>
+    {{ content }}{% if page.type == 'Trampoline' %}
     <h3 class="margin-top-30">Trampoline Net Color</h3>
     <h4 class="margin-top-30">Arch bridge design</h4>
     <p>The overall arch bridge design of the mould block has strong pressure resistance,which makes the whole more beautiful and prevents the accumulation of debris in the foundation pit.</p>
@@ -50,7 +79,7 @@ layout: pages
         <p><img src="/images/products/trampoline-net-color-brown.jpg" alt="Trampoline Net Color" class="img-responsive img-thumbnail"></p>
         <p class="text-center">Brown</p>
       </div>      
-    </div>{% if page.video == 'wu' %}{% else %}
+    </div>{% endif %}{% if page.video == 'wu' %}{% else %}
     <div class="embed-responsive embed-responsive-16by9 margin-top-30">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video }}"></iframe>
     </div>{% endif %}
