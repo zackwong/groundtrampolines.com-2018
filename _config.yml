@@ -24,4 +24,3 @@ exclude:
   - README.md
   - style.css
   - beifen
-  - groundtrampolines.sh
